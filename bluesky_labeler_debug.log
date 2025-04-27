@@ -1,0 +1,731 @@
+2025-04-21 15:45:57,759 - bluesky_labeler - INFO - Environment loaded: Username is set: True, Password is set: True
+2025-04-21 15:45:57,760 - bluesky_labeler - INFO - Starting Bluesky labeler tool
+2025-04-21 15:45:57,760 - bluesky_labeler - INFO - Validating environment variables
+2025-04-21 15:45:57,760 - bluesky_labeler - INFO - Environment variables validated successfully
+2025-04-21 15:45:57,760 - bluesky_labeler - INFO - Creating client and logging in
+2025-04-21 15:45:57,802 - httpcore.connection - DEBUG - connect_tcp.started host='bsky.social' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 15:45:57,827 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108c94c20>
+2025-04-21 15:45:57,827 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108c490a0> server_hostname='bsky.social' timeout=5.0
+2025-04-21 15:45:57,842 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108b5f4d0>
+2025-04-21 15:45:57,848 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 15:45:57,848 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 15:45:57,848 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 15:45:57,848 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 15:45:57,848 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 15:45:57,919 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 21 Apr 2025 19:45:57 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'X-Powered-By', b'Express'), (b'Access-Control-Allow-Origin', b'*'), (b'RateLimit-Limit', b'10'), (b'RateLimit-Remaining', b'9'), (b'RateLimit-Reset', b'1745351157'), (b'RateLimit-Policy', b'10;w=86400'), (b'ETag', b'W/"708-wzrP/j6AAUAWdBcDO4G07YpVMFM"'), (b'Vary', b'Accept-Encoding'), (b'Content-Encoding', b'gzip')])
+2025-04-21 15:45:57,920 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-21 15:45:57,920 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 15:45:57,920 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 15:45:57,920 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 15:45:57,920 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 15:45:57,925 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 15:45:58,000 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108ca4690>
+2025-04-21 15:45:58,001 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108c490a0> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-21 15:45:58,073 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108c455b0>
+2025-04-21 15:45:58,073 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 15:45:58,073 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 15:45:58,073 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 15:45:58,073 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 15:45:58,073 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 15:45:58,195 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2999'), (b'ratelimit-reset', b'1745265058'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Mon, 21 Apr 2025 19:45:58 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 15:45:58,207 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-21 15:45:58,208 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 15:45:58,208 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 15:45:58,208 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 15:45:58,208 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 15:45:58,208 - bluesky_labeler - INFO - Login successful as team10.bsky.social
+2025-04-21 15:45:58,208 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-21 15:45:58,209 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-21 15:45:58,209 - bluesky_labeler - INFO - Testing authentication by fetching user profile
+2025-04-21 15:45:58,209 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 15:45:58,209 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 15:45:58,210 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 15:45:58,210 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 15:45:58,210 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 15:45:58,329 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2998'), (b'ratelimit-reset', b'1745265058'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Mon, 21 Apr 2025 19:45:58 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 15:45:58,329 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-21 15:45:58,329 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 15:45:58,329 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 15:45:58,329 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 15:45:58,329 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 15:45:58,330 - bluesky_labeler - INFO - Authentication successful! Logged in as  (team10.bsky.social)
+2025-04-21 15:45:58,330 - bluesky_labeler - INFO - DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 15:45:58,331 - bluesky_labeler - INFO - Resolving DID for handle: team10.bsky.social
+2025-04-21 15:45:58,333 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bsky.social:443
+2025-04-21 15:45:58,399 - urllib3.connectionpool - DEBUG - https://bsky.social:443 "GET /xrpc/com.atproto.identity.resolveHandle?handle=team10.bsky.social HTTP/1.1" 200 42
+2025-04-21 15:45:58,399 - bluesky_labeler - INFO - Successfully resolved DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 15:45:58,400 - bluesky_labeler - INFO - Resolved DID for current user: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 15:45:58,400 - bluesky_labeler - INFO - Creating labeler client
+2025-04-21 15:45:58,407 - bluesky_labeler - INFO - Labeler client created successfully
+2025-04-21 15:45:58,407 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-21 15:45:58,408 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-21 15:45:58,409 - bluesky_labeler - INFO - Parameters: label_target=post, target_id=https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l, label_value=great
+2025-04-21 15:45:58,409 - bluesky_labeler - INFO - Applying label to post
+2025-04-21 15:45:58,409 - bluesky_labeler - INFO - Applying label ['great'] to post: https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l
+2025-04-21 15:45:58,409 - bluesky_labeler - INFO - Retrieving post from URL: https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l
+2025-04-21 15:45:58,409 - bluesky_labeler - INFO - Parsed URL - rkey: 3l6oveex3ii2l, handle: bsky.app
+2025-04-21 15:45:58,410 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 15:45:58,410 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 15:45:58,410 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 15:45:58,410 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 15:45:58,410 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 15:45:58,628 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2997'), (b'ratelimit-reset', b'1745265058'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'538'), (b'content-type', b'application/json; charset=utf-8'), (b'vary', b'Accept-Encoding'), (b'date', b'Mon, 21 Apr 2025 19:45:58 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 15:45:58,628 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/com.atproto.repo.getRecord?collection=app.bsky.feed.post&repo=bsky.app&rkey=3l6oveex3ii2l "HTTP/1.1 200 OK"
+2025-04-21 15:45:58,629 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 15:45:58,629 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 15:45:58,629 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 15:45:58,629 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 15:45:58,629 - bluesky_labeler - INFO - Successfully retrieved post: at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l
+2025-04-21 15:45:58,629 - bluesky_labeler - INFO - Creating label event data for post - CID: bafyreicnt42y6vo6pfpvyro234ac4o6ijug6adwwrh7awflgrqlt4zibxq, URI: at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l
+2025-04-21 15:45:58,630 - bluesky_labeler - DEBUG - Label event data: created_by='did:plc:6rlqiizalnmvo6t6u5bexlz2' event=ModEventLabel(create_label_vals=['great'], negate_label_vals=[], comment=None, duration_in_hours=None, py_type='tools.ozone.moderation.defs#modEventLabel') subject=Main(cid='bafyreicnt42y6vo6pfpvyro234ac4o6ijug6adwwrh7awflgrqlt4zibxq', uri='at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l', py_type='com.atproto.repo.strongRef') subject_blob_cids=[]
+2025-04-21 15:45:58,630 - bluesky_labeler - INFO - Attempt 1/3 to emit moderation event
+2025-04-21 15:45:58,630 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 15:45:58,631 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 15:45:58,700 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108c47360>
+2025-04-21 15:45:58,700 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108c49760> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-21 15:45:58,850 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108c75910>
+2025-04-21 15:45:58,851 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 15:45:58,851 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 15:45:58,851 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 15:45:58,852 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 15:45:58,852 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 15:45:59,056 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2996'), (b'ratelimit-reset', b'1745265058'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 19:45:59 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 15:45:59,056 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 15:45:59,056 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 15:45:59,056 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 15:45:59,056 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 15:45:59,056 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 15:45:59,057 - bluesky_labeler - ERROR - Network error on attempt 1: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2996', 'ratelimit-reset': '1745265058', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 19:45:59 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 15:45:59,057 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 15:45:59,057 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 15:45:59,057 - bluesky_labeler - INFO - Retrying in 1 seconds...
+2025-04-21 15:46:00,062 - bluesky_labeler - INFO - Attempt 2/3 to emit moderation event
+2025-04-21 15:46:00,062 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 15:46:00,063 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 15:46:00,064 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 15:46:00,064 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 15:46:00,064 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 15:46:00,064 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 15:46:00,286 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2995'), (b'ratelimit-reset', b'1745265058'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 19:46:00 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 15:46:00,287 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 15:46:00,287 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 15:46:00,288 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 15:46:00,288 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 15:46:00,288 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 15:46:00,289 - bluesky_labeler - ERROR - Network error on attempt 2: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2995', 'ratelimit-reset': '1745265058', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 19:46:00 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 15:46:00,289 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 15:46:00,289 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 15:46:00,289 - bluesky_labeler - INFO - Retrying in 2 seconds...
+2025-04-21 15:46:02,294 - bluesky_labeler - INFO - Attempt 3/3 to emit moderation event
+2025-04-21 15:46:02,295 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 15:46:02,296 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 15:46:02,296 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 15:46:02,296 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 15:46:02,297 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 15:46:02,297 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 15:46:02,519 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2994'), (b'ratelimit-reset', b'1745265058'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 19:46:02 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 15:46:02,520 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 15:46:02,520 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 15:46:02,520 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 15:46:02,520 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 15:46:02,521 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 15:46:02,521 - bluesky_labeler - ERROR - Network error on attempt 3: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2994', 'ratelimit-reset': '1745265058', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 19:46:02 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 15:46:02,521 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 15:46:02,521 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 15:46:02,522 - bluesky_labeler - ERROR - Max retries exceeded
+2025-04-21 15:46:02,522 - bluesky_labeler - ERROR - Error in label_post: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2994', 'ratelimit-reset': '1745265058', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 19:46:02 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 15:46:02,522 - bluesky_labeler - ERROR - Operation failed: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2994', 'ratelimit-reset': '1745265058', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 19:46:02 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 16:40:53,395 - bluesky_labeler - INFO - Environment loaded: Username is set: True, Password is set: True
+2025-04-21 16:40:53,397 - bluesky_labeler - INFO - Starting Bluesky labeler tool
+2025-04-21 16:40:53,397 - bluesky_labeler - INFO - Validating environment variables
+2025-04-21 16:40:53,397 - bluesky_labeler - INFO - Environment variables validated successfully
+2025-04-21 16:40:53,397 - bluesky_labeler - INFO - Creating client and logging in
+2025-04-21 16:40:53,429 - httpcore.connection - DEBUG - connect_tcp.started host='bsky.social' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 16:40:53,455 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x104a74c20>
+2025-04-21 16:40:53,455 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x104a210a0> server_hostname='bsky.social' timeout=5.0
+2025-04-21 16:40:53,470 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x104942e90>
+2025-04-21 16:40:53,470 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 16:40:53,470 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 16:40:53,470 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 16:40:53,470 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 16:40:53,470 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 16:40:53,544 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 21 Apr 2025 20:40:53 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'X-Powered-By', b'Express'), (b'Access-Control-Allow-Origin', b'*'), (b'RateLimit-Limit', b'10'), (b'RateLimit-Remaining', b'9'), (b'RateLimit-Reset', b'1745354453'), (b'RateLimit-Policy', b'10;w=86400'), (b'ETag', b'W/"708-50ClRVnUzJeHogGxcR+pJgR2VqY"'), (b'Vary', b'Accept-Encoding'), (b'Content-Encoding', b'gzip')])
+2025-04-21 16:40:53,544 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-21 16:40:53,544 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 16:40:53,544 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 16:40:53,544 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 16:40:53,544 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 16:40:53,546 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 16:40:53,623 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x104943c50>
+2025-04-21 16:40:53,623 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x104a210a0> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-21 16:40:53,701 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x104a1d5b0>
+2025-04-21 16:40:53,701 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 16:40:53,702 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 16:40:53,702 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 16:40:53,702 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 16:40:53,702 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 16:40:53,827 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2999'), (b'ratelimit-reset', b'1745268353'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Mon, 21 Apr 2025 20:40:53 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 16:40:53,829 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-21 16:40:53,830 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 16:40:53,830 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 16:40:53,830 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 16:40:53,830 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 16:40:53,832 - bluesky_labeler - INFO - Login successful as team10.bsky.social
+2025-04-21 16:40:53,832 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-21 16:40:53,832 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-21 16:40:53,832 - bluesky_labeler - INFO - Testing authentication by fetching user profile
+2025-04-21 16:40:53,833 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 16:40:53,834 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 16:40:53,834 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 16:40:53,834 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 16:40:53,834 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 16:40:53,953 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2998'), (b'ratelimit-reset', b'1745268353'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Mon, 21 Apr 2025 20:40:53 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 16:40:53,954 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-21 16:40:53,954 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 16:40:53,954 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 16:40:53,955 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 16:40:53,955 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 16:40:53,955 - bluesky_labeler - INFO - Authentication successful! Logged in as  (team10.bsky.social)
+2025-04-21 16:40:53,956 - bluesky_labeler - INFO - DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 16:40:53,956 - bluesky_labeler - INFO - Resolving DID for handle: team10.bsky.social
+2025-04-21 16:40:53,962 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bsky.social:443
+2025-04-21 16:40:54,010 - urllib3.connectionpool - DEBUG - https://bsky.social:443 "GET /xrpc/com.atproto.identity.resolveHandle?handle=team10.bsky.social HTTP/1.1" 200 42
+2025-04-21 16:40:54,011 - bluesky_labeler - INFO - Successfully resolved DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 16:40:54,012 - bluesky_labeler - INFO - Resolved DID for current user: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 16:40:54,012 - bluesky_labeler - INFO - Creating labeler client
+2025-04-21 16:40:54,024 - bluesky_labeler - INFO - Labeler client created successfully
+2025-04-21 16:40:54,025 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-21 16:40:54,025 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-21 16:40:54,026 - bluesky_labeler - INFO - Parameters: label_target=post, target_id=https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l, label_value=great
+2025-04-21 16:40:54,026 - bluesky_labeler - INFO - Applying label to post
+2025-04-21 16:40:54,026 - bluesky_labeler - INFO - Applying label ['great'] to post: https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l
+2025-04-21 16:40:54,026 - bluesky_labeler - INFO - Retrieving post from URL: https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l
+2025-04-21 16:40:54,026 - bluesky_labeler - INFO - Parsed URL - rkey: 3l6oveex3ii2l, handle: bsky.app
+2025-04-21 16:40:54,027 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 16:40:54,027 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 16:40:54,027 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 16:40:54,027 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 16:40:54,028 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 16:40:54,262 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2997'), (b'ratelimit-reset', b'1745268353'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'538'), (b'content-type', b'application/json; charset=utf-8'), (b'vary', b'Accept-Encoding'), (b'date', b'Mon, 21 Apr 2025 20:40:54 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 16:40:54,263 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/com.atproto.repo.getRecord?collection=app.bsky.feed.post&repo=bsky.app&rkey=3l6oveex3ii2l "HTTP/1.1 200 OK"
+2025-04-21 16:40:54,263 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 16:40:54,263 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 16:40:54,263 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 16:40:54,264 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 16:40:54,264 - bluesky_labeler - INFO - Successfully retrieved post: at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l
+2025-04-21 16:40:54,264 - bluesky_labeler - INFO - Creating label event data for post - CID: bafyreicnt42y6vo6pfpvyro234ac4o6ijug6adwwrh7awflgrqlt4zibxq, URI: at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l
+2025-04-21 16:40:54,265 - bluesky_labeler - DEBUG - Label event data: created_by='did:plc:6rlqiizalnmvo6t6u5bexlz2' event=ModEventLabel(create_label_vals=['great'], negate_label_vals=[], comment=None, duration_in_hours=None, py_type='tools.ozone.moderation.defs#modEventLabel') subject=Main(cid='bafyreicnt42y6vo6pfpvyro234ac4o6ijug6adwwrh7awflgrqlt4zibxq', uri='at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l', py_type='com.atproto.repo.strongRef') subject_blob_cids=[]
+2025-04-21 16:40:54,265 - bluesky_labeler - INFO - Attempt 1/3 to emit moderation event
+2025-04-21 16:40:54,265 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 16:40:54,266 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 16:40:54,335 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x104a1f360>
+2025-04-21 16:40:54,336 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x104a21760> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-21 16:40:54,474 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x104a516d0>
+2025-04-21 16:40:54,475 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 16:40:54,475 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 16:40:54,475 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 16:40:54,476 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 16:40:54,476 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 16:40:54,704 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2996'), (b'ratelimit-reset', b'1745268353'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 20:40:54 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 16:40:54,704 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 16:40:54,704 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 16:40:54,704 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 16:40:54,705 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 16:40:54,705 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 16:40:54,705 - bluesky_labeler - ERROR - Network error on attempt 1: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2996', 'ratelimit-reset': '1745268353', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 20:40:54 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 16:40:54,705 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 16:40:54,705 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 16:40:54,705 - bluesky_labeler - INFO - Retrying in 1 seconds...
+2025-04-21 16:40:55,706 - bluesky_labeler - INFO - Attempt 2/3 to emit moderation event
+2025-04-21 16:40:55,706 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 16:40:55,707 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 16:40:55,708 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 16:40:55,708 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 16:40:55,709 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 16:40:55,709 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 16:40:55,909 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2995'), (b'ratelimit-reset', b'1745268353'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 20:40:55 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 16:40:55,910 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 16:40:55,910 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 16:40:55,910 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 16:40:55,910 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 16:40:55,910 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 16:40:55,911 - bluesky_labeler - ERROR - Network error on attempt 2: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2995', 'ratelimit-reset': '1745268353', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 20:40:55 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 16:40:55,911 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 16:40:55,911 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 16:40:55,911 - bluesky_labeler - INFO - Retrying in 2 seconds...
+2025-04-21 16:40:57,916 - bluesky_labeler - INFO - Attempt 3/3 to emit moderation event
+2025-04-21 16:40:57,916 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 16:40:57,918 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 16:40:57,919 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 16:40:57,919 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 16:40:57,920 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 16:40:57,920 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 16:40:58,144 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2994'), (b'ratelimit-reset', b'1745268353'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 20:40:58 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 16:40:58,144 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 16:40:58,144 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 16:40:58,144 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 16:40:58,144 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 16:40:58,144 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 16:40:58,145 - bluesky_labeler - ERROR - Network error on attempt 3: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2994', 'ratelimit-reset': '1745268353', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 20:40:58 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 16:40:58,145 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 16:40:58,145 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 16:40:58,145 - bluesky_labeler - ERROR - Max retries exceeded
+2025-04-21 16:40:58,145 - bluesky_labeler - ERROR - Error in label_post: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2994', 'ratelimit-reset': '1745268353', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 20:40:58 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 16:40:58,145 - bluesky_labeler - ERROR - Operation failed: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2994', 'ratelimit-reset': '1745268353', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 20:40:58 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 17:38:01,881 - bluesky_labeler - INFO - Environment loaded: Username is set: True, Password is set: True
+2025-04-21 17:38:01,882 - bluesky_labeler - INFO - Starting Bluesky labeler tool
+2025-04-21 17:38:01,882 - bluesky_labeler - INFO - Validating environment variables
+2025-04-21 17:38:01,882 - bluesky_labeler - INFO - Environment variables validated successfully
+2025-04-21 17:38:01,882 - bluesky_labeler - INFO - Creating client and logging in
+2025-04-21 17:38:01,914 - httpcore.connection - DEBUG - connect_tcp.started host='bsky.social' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 17:38:01,951 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1050d4c20>
+2025-04-21 17:38:01,951 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1050750a0> server_hostname='bsky.social' timeout=5.0
+2025-04-21 17:38:01,965 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x104f93250>
+2025-04-21 17:38:01,965 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 17:38:01,966 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 17:38:01,966 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 17:38:01,966 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 17:38:01,966 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 17:38:02,036 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 21 Apr 2025 21:38:02 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'X-Powered-By', b'Express'), (b'Access-Control-Allow-Origin', b'*'), (b'RateLimit-Limit', b'10'), (b'RateLimit-Remaining', b'9'), (b'RateLimit-Reset', b'1745357882'), (b'RateLimit-Policy', b'10;w=86400'), (b'ETag', b'W/"708-wTlb3ZTVeEd6ec7+Vru16ltmFi4"'), (b'Vary', b'Accept-Encoding'), (b'Content-Encoding', b'gzip')])
+2025-04-21 17:38:02,036 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-21 17:38:02,036 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 17:38:02,036 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 17:38:02,037 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 17:38:02,037 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 17:38:02,039 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 17:38:02,115 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1050dc050>
+2025-04-21 17:38:02,116 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1050750a0> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-21 17:38:02,190 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1050715b0>
+2025-04-21 17:38:02,190 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 17:38:02,191 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 17:38:02,191 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 17:38:02,191 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 17:38:02,191 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 17:38:02,308 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2998'), (b'ratelimit-reset', b'1745271762'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Mon, 21 Apr 2025 21:38:02 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 17:38:02,309 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-21 17:38:02,309 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 17:38:02,310 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 17:38:02,310 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 17:38:02,310 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 17:38:02,311 - bluesky_labeler - INFO - Login successful as team10.bsky.social
+2025-04-21 17:38:02,311 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-21 17:38:02,311 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-21 17:38:02,311 - bluesky_labeler - INFO - Testing authentication by fetching user profile
+2025-04-21 17:38:02,312 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 17:38:02,312 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 17:38:02,313 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 17:38:02,313 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 17:38:02,313 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 17:38:02,464 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2997'), (b'ratelimit-reset', b'1745271762'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Mon, 21 Apr 2025 21:38:02 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 17:38:02,465 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-21 17:38:02,465 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 17:38:02,466 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 17:38:02,466 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 17:38:02,466 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 17:38:02,467 - bluesky_labeler - INFO - Authentication successful! Logged in as  (team10.bsky.social)
+2025-04-21 17:38:02,467 - bluesky_labeler - INFO - DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 17:38:02,467 - bluesky_labeler - INFO - Resolving DID for handle: team10.bsky.social
+2025-04-21 17:38:02,472 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bsky.social:443
+2025-04-21 17:38:02,523 - urllib3.connectionpool - DEBUG - https://bsky.social:443 "GET /xrpc/com.atproto.identity.resolveHandle?handle=team10.bsky.social HTTP/1.1" 200 42
+2025-04-21 17:38:02,524 - bluesky_labeler - INFO - Successfully resolved DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 17:38:02,524 - bluesky_labeler - INFO - Resolved DID for current user: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 17:38:02,525 - bluesky_labeler - INFO - Creating labeler client
+2025-04-21 17:38:02,534 - bluesky_labeler - INFO - Labeler client created successfully
+2025-04-21 17:38:02,535 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-21 17:38:02,535 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-21 17:38:02,536 - bluesky_labeler - INFO - Parameters: label_target=post, target_id=https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l, label_value=great
+2025-04-21 17:38:02,536 - bluesky_labeler - INFO - Applying label to post
+2025-04-21 17:38:02,536 - bluesky_labeler - INFO - Applying label ['great'] to post: https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l
+2025-04-21 17:38:02,536 - bluesky_labeler - INFO - Retrieving post from URL: https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l
+2025-04-21 17:38:02,536 - bluesky_labeler - INFO - Parsed URL - rkey: 3l6oveex3ii2l, handle: bsky.app
+2025-04-21 17:38:02,537 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 17:38:02,538 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 17:38:02,538 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 17:38:02,538 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 17:38:02,538 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 17:38:02,752 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2996'), (b'ratelimit-reset', b'1745271762'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'538'), (b'content-type', b'application/json; charset=utf-8'), (b'vary', b'Accept-Encoding'), (b'date', b'Mon, 21 Apr 2025 21:38:02 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 17:38:02,753 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/com.atproto.repo.getRecord?collection=app.bsky.feed.post&repo=bsky.app&rkey=3l6oveex3ii2l "HTTP/1.1 200 OK"
+2025-04-21 17:38:02,754 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 17:38:02,754 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 17:38:02,754 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 17:38:02,754 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 17:38:02,755 - bluesky_labeler - INFO - Successfully retrieved post: at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l
+2025-04-21 17:38:02,755 - bluesky_labeler - INFO - Creating label event data for post - CID: bafyreicnt42y6vo6pfpvyro234ac4o6ijug6adwwrh7awflgrqlt4zibxq, URI: at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l
+2025-04-21 17:38:02,756 - bluesky_labeler - DEBUG - Label event data: created_by='did:plc:6rlqiizalnmvo6t6u5bexlz2' event=ModEventLabel(create_label_vals=['great'], negate_label_vals=[], comment=None, duration_in_hours=None, py_type='tools.ozone.moderation.defs#modEventLabel') subject=Main(cid='bafyreicnt42y6vo6pfpvyro234ac4o6ijug6adwwrh7awflgrqlt4zibxq', uri='at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l', py_type='com.atproto.repo.strongRef') subject_blob_cids=[]
+2025-04-21 17:38:02,756 - bluesky_labeler - INFO - Attempt 1/3 to emit moderation event
+2025-04-21 17:38:02,756 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 17:38:02,757 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 17:38:02,828 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x105073360>
+2025-04-21 17:38:02,828 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x105075760> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-21 17:38:02,899 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1050b5250>
+2025-04-21 17:38:02,900 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 17:38:02,900 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 17:38:02,901 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 17:38:02,901 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 17:38:02,901 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 17:38:03,336 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2995'), (b'ratelimit-reset', b'1745271762'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 21:38:03 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 17:38:03,337 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 17:38:03,337 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 17:38:03,338 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 17:38:03,338 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 17:38:03,338 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 17:38:03,339 - bluesky_labeler - ERROR - Network error on attempt 1: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2995', 'ratelimit-reset': '1745271762', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 21:38:03 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 17:38:03,339 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 17:38:03,339 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 17:38:03,339 - bluesky_labeler - INFO - Retrying in 1 seconds...
+2025-04-21 17:38:04,345 - bluesky_labeler - INFO - Attempt 2/3 to emit moderation event
+2025-04-21 17:38:04,345 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 17:38:04,347 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 17:38:04,347 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 17:38:04,347 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 17:38:04,348 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 17:38:04,348 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 17:38:04,562 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2994'), (b'ratelimit-reset', b'1745271762'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 21:38:04 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 17:38:04,563 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 17:38:04,563 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 17:38:04,563 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 17:38:04,564 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 17:38:04,564 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 17:38:04,564 - bluesky_labeler - ERROR - Network error on attempt 2: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2994', 'ratelimit-reset': '1745271762', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 21:38:04 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 17:38:04,564 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 17:38:04,565 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 17:38:04,565 - bluesky_labeler - INFO - Retrying in 2 seconds...
+2025-04-21 17:38:06,566 - bluesky_labeler - INFO - Attempt 3/3 to emit moderation event
+2025-04-21 17:38:06,566 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 17:38:06,568 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 17:38:06,569 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 17:38:06,569 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 17:38:06,569 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 17:38:06,569 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 17:38:06,857 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2993'), (b'ratelimit-reset', b'1745271762'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Mon, 21 Apr 2025 21:38:06 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 17:38:06,857 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 17:38:06,858 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 17:38:06,858 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 17:38:06,858 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 17:38:06,859 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 17:38:06,859 - bluesky_labeler - ERROR - Network error on attempt 3: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2993', 'ratelimit-reset': '1745271762', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 21:38:06 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 17:38:06,859 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 17:38:06,859 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 17:38:06,859 - bluesky_labeler - ERROR - Max retries exceeded
+2025-04-21 17:38:06,859 - bluesky_labeler - ERROR - Error in label_post: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2993', 'ratelimit-reset': '1745271762', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 21:38:06 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 17:38:06,860 - bluesky_labeler - ERROR - Operation failed: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2993', 'ratelimit-reset': '1745271762', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Mon, 21 Apr 2025 21:38:06 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 20:30:03,375 - bluesky_labeler - INFO - Environment loaded: Username is set: True, Password is set: True
+2025-04-21 20:30:03,376 - bluesky_labeler - INFO - Starting Bluesky labeler tool
+2025-04-21 20:30:03,376 - bluesky_labeler - INFO - Validating environment variables
+2025-04-21 20:30:03,376 - bluesky_labeler - INFO - Environment variables validated successfully
+2025-04-21 20:30:03,376 - bluesky_labeler - INFO - Creating client and logging in
+2025-04-21 20:30:03,407 - httpcore.connection - DEBUG - connect_tcp.started host='bsky.social' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 20:30:03,435 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1092b4c20>
+2025-04-21 20:30:03,435 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1092590a0> server_hostname='bsky.social' timeout=5.0
+2025-04-21 20:30:03,462 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x109173890>
+2025-04-21 20:30:03,463 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 20:30:03,463 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 20:30:03,463 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 20:30:03,463 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 20:30:03,463 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 20:30:03,569 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 22 Apr 2025 00:30:03 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'X-Powered-By', b'Express'), (b'Access-Control-Allow-Origin', b'*'), (b'RateLimit-Limit', b'10'), (b'RateLimit-Remaining', b'9'), (b'RateLimit-Reset', b'1745368203'), (b'RateLimit-Policy', b'10;w=86400'), (b'ETag', b'W/"708-d6KFu1XtqPmnuxayN49ijYe6YDY"'), (b'Vary', b'Accept-Encoding'), (b'Content-Encoding', b'gzip')])
+2025-04-21 20:30:03,569 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-21 20:30:03,569 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 20:30:03,570 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 20:30:03,570 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 20:30:03,570 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 20:30:03,573 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 20:30:04,698 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1092bc690>
+2025-04-21 20:30:04,699 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1092590a0> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-21 20:30:04,898 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1092515b0>
+2025-04-21 20:30:04,899 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 20:30:04,899 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 20:30:04,899 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 20:30:04,899 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 20:30:04,900 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 20:30:05,014 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2998'), (b'ratelimit-reset', b'1745281942'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Tue, 22 Apr 2025 00:30:05 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 20:30:05,015 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-21 20:30:05,016 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 20:30:05,016 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 20:30:05,016 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 20:30:05,017 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 20:30:05,017 - bluesky_labeler - INFO - Login successful as team10.bsky.social
+2025-04-21 20:30:05,017 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-21 20:30:05,018 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-21 20:30:05,018 - bluesky_labeler - INFO - Testing authentication by fetching user profile
+2025-04-21 20:30:05,019 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 20:30:05,019 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 20:30:05,019 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 20:30:05,019 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 20:30:05,019 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 20:30:05,435 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2997'), (b'ratelimit-reset', b'1745281942'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Tue, 22 Apr 2025 00:30:05 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 20:30:05,435 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-21 20:30:05,436 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 20:30:05,436 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 20:30:05,436 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 20:30:05,436 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 20:30:05,436 - bluesky_labeler - INFO - Authentication successful! Logged in as  (team10.bsky.social)
+2025-04-21 20:30:05,436 - bluesky_labeler - INFO - DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 20:30:05,437 - bluesky_labeler - INFO - Resolving DID for handle: team10.bsky.social
+2025-04-21 20:30:05,446 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bsky.social:443
+2025-04-21 20:30:05,512 - urllib3.connectionpool - DEBUG - https://bsky.social:443 "GET /xrpc/com.atproto.identity.resolveHandle?handle=team10.bsky.social HTTP/1.1" 200 42
+2025-04-21 20:30:05,512 - bluesky_labeler - INFO - Successfully resolved DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 20:30:05,513 - bluesky_labeler - INFO - Resolved DID for current user: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 20:30:05,513 - bluesky_labeler - INFO - Creating labeler client
+2025-04-21 20:30:05,521 - bluesky_labeler - INFO - Labeler client created successfully
+2025-04-21 20:30:05,522 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-21 20:30:05,522 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-21 20:30:05,523 - bluesky_labeler - INFO - Parameters: label_target=post, target_id=https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l, label_value=great
+2025-04-21 20:30:05,523 - bluesky_labeler - INFO - Applying label to post
+2025-04-21 20:30:05,523 - bluesky_labeler - INFO - Applying label ['great'] to post: https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l
+2025-04-21 20:30:05,523 - bluesky_labeler - INFO - Retrieving post from URL: https://bsky.app/profile/bsky.app/post/3l6oveex3ii2l
+2025-04-21 20:30:05,523 - bluesky_labeler - INFO - Parsed URL - rkey: 3l6oveex3ii2l, handle: bsky.app
+2025-04-21 20:30:05,524 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-21 20:30:05,524 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 20:30:05,524 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-21 20:30:05,524 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 20:30:05,525 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-21 20:30:05,719 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2996'), (b'ratelimit-reset', b'1745281942'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'538'), (b'content-type', b'application/json; charset=utf-8'), (b'vary', b'Accept-Encoding'), (b'date', b'Tue, 22 Apr 2025 00:30:05 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 20:30:05,719 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/com.atproto.repo.getRecord?collection=app.bsky.feed.post&repo=bsky.app&rkey=3l6oveex3ii2l "HTTP/1.1 200 OK"
+2025-04-21 20:30:05,720 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-21 20:30:05,720 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 20:30:05,720 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 20:30:05,720 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 20:30:05,720 - bluesky_labeler - INFO - Successfully retrieved post: at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l
+2025-04-21 20:30:05,720 - bluesky_labeler - INFO - Creating label event data for post - CID: bafyreicnt42y6vo6pfpvyro234ac4o6ijug6adwwrh7awflgrqlt4zibxq, URI: at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l
+2025-04-21 20:30:05,721 - bluesky_labeler - DEBUG - Label event data: created_by='did:plc:6rlqiizalnmvo6t6u5bexlz2' event=ModEventLabel(create_label_vals=['great'], negate_label_vals=[], comment=None, duration_in_hours=None, py_type='tools.ozone.moderation.defs#modEventLabel') subject=Main(cid='bafyreicnt42y6vo6pfpvyro234ac4o6ijug6adwwrh7awflgrqlt4zibxq', uri='at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3l6oveex3ii2l', py_type='com.atproto.repo.strongRef') subject_blob_cids=[]
+2025-04-21 20:30:05,721 - bluesky_labeler - INFO - Attempt 1/3 to emit moderation event
+2025-04-21 20:30:05,721 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 20:30:05,722 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-21 20:30:05,809 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x109253360>
+2025-04-21 20:30:05,810 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x109259760> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-21 20:30:05,890 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1092896d0>
+2025-04-21 20:30:05,891 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 20:30:05,892 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 20:30:05,892 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 20:30:05,892 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 20:30:05,893 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 20:30:06,565 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2995'), (b'ratelimit-reset', b'1745281942'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Tue, 22 Apr 2025 00:30:06 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 20:30:06,566 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 20:30:06,566 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 20:30:06,567 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 20:30:06,567 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 20:30:06,567 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 20:30:06,567 - bluesky_labeler - ERROR - Network error on attempt 1: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2995', 'ratelimit-reset': '1745281942', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Tue, 22 Apr 2025 00:30:06 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 20:30:06,568 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 20:30:06,568 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 20:30:06,568 - bluesky_labeler - INFO - Retrying in 1 seconds...
+2025-04-21 20:30:07,573 - bluesky_labeler - INFO - Attempt 2/3 to emit moderation event
+2025-04-21 20:30:07,573 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 20:30:07,577 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 20:30:07,578 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 20:30:07,578 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 20:30:07,578 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 20:30:07,578 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 20:30:07,772 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2994'), (b'ratelimit-reset', b'1745281942'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Tue, 22 Apr 2025 00:30:07 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 20:30:07,773 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 20:30:07,774 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 20:30:07,774 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 20:30:07,775 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 20:30:07,775 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 20:30:07,776 - bluesky_labeler - ERROR - Network error on attempt 2: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2994', 'ratelimit-reset': '1745281942', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Tue, 22 Apr 2025 00:30:07 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 20:30:07,776 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 20:30:07,776 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 20:30:07,776 - bluesky_labeler - INFO - Retrying in 2 seconds...
+2025-04-21 20:30:09,779 - bluesky_labeler - INFO - Attempt 3/3 to emit moderation event
+2025-04-21 20:30:09,781 - bluesky_labeler - INFO - Using labeler client with DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-21 20:30:09,783 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-21 20:30:09,783 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-21 20:30:09,784 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-21 20:30:09,784 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-21 20:30:09,784 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-21 20:30:09,978 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2993'), (b'ratelimit-reset', b'1745281942'), (b'ratelimit-policy', b'3000;w=300'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'content-type', b'application/json; charset=utf-8'), (b'content-length', b'68'), (b'etag', b'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"'), (b'date', b'Tue, 22 Apr 2025 00:30:10 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-21 20:30:09,979 - httpx - INFO - HTTP Request: POST https://hollowfoot.us-west.host.bsky.network/xrpc/tools.ozone.moderation.emitEvent "HTTP/1.1 502 Bad Gateway"
+2025-04-21 20:30:09,979 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-21 20:30:09,980 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-21 20:30:09,980 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-21 20:30:09,980 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-21 20:30:09,981 - bluesky_labeler - ERROR - Network error on attempt 3: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2993', 'ratelimit-reset': '1745281942', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Tue, 22 Apr 2025 00:30:10 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 20:30:09,981 - bluesky_labeler - ERROR - Response status: 502
+2025-04-21 20:30:09,981 - bluesky_labeler - ERROR - Response content: XrpcError(error='UpstreamFailure', message='Upstream service unreachable')
+2025-04-21 20:30:09,981 - bluesky_labeler - ERROR - Max retries exceeded
+2025-04-21 20:30:09,981 - bluesky_labeler - ERROR - Error in label_post: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2993', 'ratelimit-reset': '1745281942', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Tue, 22 Apr 2025 00:30:10 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-21 20:30:09,981 - bluesky_labeler - ERROR - Operation failed: Response(success=False, status_code=502, content=XrpcError(error='UpstreamFailure', message='Upstream service unreachable'), headers={'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'ratelimit-limit': '3000', 'ratelimit-remaining': '2993', 'ratelimit-reset': '1745281942', 'ratelimit-policy': '3000;w=300', 'cache-control': 'private', 'vary': 'Authorization, Accept-Encoding', 'content-type': 'application/json; charset=utf-8', 'content-length': '68', 'etag': 'W/"44-AJX0etNgxpDCFPcvTwgVOxfw5aw"', 'date': 'Tue, 22 Apr 2025 00:30:10 GMT', 'keep-alive': 'timeout=90', 'strict-transport-security': 'max-age=63072000'})
+2025-04-23 21:43:30,598 - bluesky_labeler - INFO - Environment loaded: Username is set: True, Password is set: True
+2025-04-23 21:43:30,600 - bluesky_labeler - INFO - Starting Bluesky labeler tool
+2025-04-23 21:43:30,600 - bluesky_labeler - INFO - Validating environment variables
+2025-04-23 21:43:30,600 - bluesky_labeler - INFO - Environment variables validated successfully
+2025-04-23 21:43:30,600 - bluesky_labeler - INFO - Creating client and logging in
+2025-04-23 21:43:30,639 - httpcore.connection - DEBUG - connect_tcp.started host='bsky.social' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-23 21:43:30,740 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10ca0cc20>
+2025-04-23 21:43:30,740 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10c9b1130> server_hostname='bsky.social' timeout=5.0
+2025-04-23 21:43:30,757 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10c902850>
+2025-04-23 21:43:30,757 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-23 21:43:30,757 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:43:30,757 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-23 21:43:30,757 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:43:30,758 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-23 21:43:30,825 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 24 Apr 2025 01:43:30 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'X-Powered-By', b'Express'), (b'Access-Control-Allow-Origin', b'*'), (b'RateLimit-Limit', b'10'), (b'RateLimit-Remaining', b'9'), (b'RateLimit-Reset', b'1745545410'), (b'RateLimit-Policy', b'10;w=86400'), (b'ETag', b'W/"708-S+AFLY2ozAv0mKhybTBoekTIrqU"'), (b'Vary', b'Accept-Encoding'), (b'Content-Encoding', b'gzip')])
+2025-04-23 21:43:30,826 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-23 21:43:30,826 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-23 21:43:30,827 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:43:30,827 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:43:30,827 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:43:30,829 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-23 21:43:30,907 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10c9039d0>
+2025-04-23 21:43:30,908 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10c9b1130> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-23 21:43:30,981 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10c9ad5b0>
+2025-04-23 21:43:30,982 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-23 21:43:30,985 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:43:30,985 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-23 21:43:30,985 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:43:30,985 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-23 21:43:31,107 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2999'), (b'ratelimit-reset', b'1745459311'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Thu, 24 Apr 2025 01:43:31 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-23 21:43:31,108 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-23 21:43:31,108 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-23 21:43:31,108 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:43:31,109 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:43:31,109 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:43:31,109 - bluesky_labeler - INFO - Login successful as team10.bsky.social
+2025-04-23 21:43:31,109 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-23 21:43:31,109 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-23 21:43:31,109 - bluesky_labeler - INFO - Testing authentication by fetching user profile
+2025-04-23 21:43:31,110 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-23 21:43:31,110 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:43:31,111 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-23 21:43:31,111 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:43:31,111 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-23 21:43:31,243 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2998'), (b'ratelimit-reset', b'1745459311'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Thu, 24 Apr 2025 01:43:31 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-23 21:43:31,243 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-23 21:43:31,244 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-23 21:43:31,244 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:43:31,244 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:43:31,244 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:43:31,245 - bluesky_labeler - INFO - Authentication successful! Logged in as  (team10.bsky.social)
+2025-04-23 21:43:31,245 - bluesky_labeler - INFO - DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:43:31,245 - bluesky_labeler - INFO - Resolving DID for handle: team10.bsky.social
+2025-04-23 21:43:31,249 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bsky.social:443
+2025-04-23 21:43:31,300 - urllib3.connectionpool - DEBUG - https://bsky.social:443 "GET /xrpc/com.atproto.identity.resolveHandle?handle=team10.bsky.social HTTP/1.1" 200 42
+2025-04-23 21:43:31,301 - bluesky_labeler - INFO - Successfully resolved DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:43:31,302 - bluesky_labeler - INFO - Resolved DID for current user: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:43:31,302 - bluesky_labeler - INFO - Creating labeler client
+2025-04-23 21:43:31,314 - bluesky_labeler - INFO - Labeler client created successfully
+2025-04-23 21:43:31,314 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-23 21:43:31,314 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-23 21:43:43,213 - bluesky_labeler - INFO - Environment loaded: Username is set: True, Password is set: True
+2025-04-23 21:43:43,213 - bluesky_labeler - INFO - Starting Bluesky labeler tool
+2025-04-23 21:43:43,213 - bluesky_labeler - INFO - Validating environment variables
+2025-04-23 21:43:43,213 - bluesky_labeler - INFO - Environment variables validated successfully
+2025-04-23 21:43:43,213 - bluesky_labeler - INFO - Creating client and logging in
+2025-04-23 21:43:43,248 - httpcore.connection - DEBUG - connect_tcp.started host='bsky.social' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-23 21:43:43,305 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x113884c20>
+2025-04-23 21:43:43,305 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x113831130> server_hostname='bsky.social' timeout=5.0
+2025-04-23 21:43:43,320 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x104ceb890>
+2025-04-23 21:43:43,320 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-23 21:43:43,320 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:43:43,320 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-23 21:43:43,321 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:43:43,321 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-23 21:43:43,389 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 24 Apr 2025 01:43:43 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'X-Powered-By', b'Express'), (b'Access-Control-Allow-Origin', b'*'), (b'RateLimit-Limit', b'10'), (b'RateLimit-Remaining', b'9'), (b'RateLimit-Reset', b'1745545423'), (b'RateLimit-Policy', b'10;w=86400'), (b'ETag', b'W/"708-eXCZPWoIE03KEriV4c5vRXyr0+0"'), (b'Vary', b'Accept-Encoding'), (b'Content-Encoding', b'gzip')])
+2025-04-23 21:43:43,389 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-23 21:43:43,389 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-23 21:43:43,390 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:43:43,390 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:43:43,390 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:43:43,393 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-23 21:43:43,464 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11388c690>
+2025-04-23 21:43:43,465 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x113831130> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-23 21:43:43,538 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1138295b0>
+2025-04-23 21:43:43,538 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-23 21:43:43,539 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:43:43,539 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-23 21:43:43,540 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:43:43,540 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-23 21:43:43,654 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2997'), (b'ratelimit-reset', b'1745459311'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Thu, 24 Apr 2025 01:43:43 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-23 21:43:43,655 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-23 21:43:43,655 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-23 21:43:43,656 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:43:43,656 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:43:43,656 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:43:43,656 - bluesky_labeler - INFO - Login successful as team10.bsky.social
+2025-04-23 21:43:43,656 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-23 21:43:43,656 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-23 21:43:43,656 - bluesky_labeler - INFO - Testing authentication by fetching user profile
+2025-04-23 21:43:43,657 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-23 21:43:43,657 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:43:43,657 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-23 21:43:43,657 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:43:43,657 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-23 21:43:43,818 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2996'), (b'ratelimit-reset', b'1745459311'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Thu, 24 Apr 2025 01:43:43 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-23 21:43:43,819 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-23 21:43:43,820 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-23 21:43:43,820 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:43:43,820 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:43:43,820 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:43:43,820 - bluesky_labeler - INFO - Authentication successful! Logged in as  (team10.bsky.social)
+2025-04-23 21:43:43,820 - bluesky_labeler - INFO - DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:43:43,820 - bluesky_labeler - INFO - Resolving DID for handle: team10.bsky.social
+2025-04-23 21:43:43,823 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bsky.social:443
+2025-04-23 21:43:43,869 - urllib3.connectionpool - DEBUG - https://bsky.social:443 "GET /xrpc/com.atproto.identity.resolveHandle?handle=team10.bsky.social HTTP/1.1" 200 42
+2025-04-23 21:43:43,869 - bluesky_labeler - INFO - Successfully resolved DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:43:43,870 - bluesky_labeler - INFO - Resolved DID for current user: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:43:43,870 - bluesky_labeler - INFO - Creating labeler client
+2025-04-23 21:43:43,879 - bluesky_labeler - INFO - Labeler client created successfully
+2025-04-23 21:43:43,879 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-23 21:43:43,879 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-23 21:45:59,900 - bluesky_labeler - INFO - Environment loaded: Username is set: True, Password is set: True
+2025-04-23 21:45:59,914 - bluesky_labeler - INFO - Starting Bluesky labeler tool
+2025-04-23 21:45:59,914 - bluesky_labeler - INFO - Validating environment variables
+2025-04-23 21:45:59,915 - bluesky_labeler - INFO - Environment variables validated successfully
+2025-04-23 21:45:59,915 - bluesky_labeler - INFO - Creating client and logging in
+2025-04-23 21:45:59,950 - httpcore.connection - DEBUG - connect_tcp.started host='bsky.social' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-23 21:45:59,964 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1088b8c20>
+2025-04-23 21:45:59,964 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108861130> server_hostname='bsky.social' timeout=5.0
+2025-04-23 21:45:59,978 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108773750>
+2025-04-23 21:45:59,978 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-23 21:45:59,978 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:45:59,978 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-23 21:45:59,978 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:45:59,978 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-23 21:46:00,045 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 24 Apr 2025 01:46:00 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'X-Powered-By', b'Express'), (b'Access-Control-Allow-Origin', b'*'), (b'RateLimit-Limit', b'10'), (b'RateLimit-Remaining', b'9'), (b'RateLimit-Reset', b'1745545559'), (b'RateLimit-Policy', b'10;w=86400'), (b'ETag', b'W/"708-N/xcIdzgj5tMgbbehR1tsHMx/+E"'), (b'Vary', b'Accept-Encoding'), (b'Content-Encoding', b'gzip')])
+2025-04-23 21:46:00,045 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-23 21:46:00,045 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-23 21:46:00,045 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:46:00,045 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:46:00,045 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:46:00,049 - httpcore.connection - DEBUG - connect_tcp.started host='hollowfoot.us-west.host.bsky.network' port=443 local_address=None timeout=5.0 socket_options=None
+2025-04-23 21:46:00,200 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1088bc550>
+2025-04-23 21:46:00,201 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108861130> server_hostname='hollowfoot.us-west.host.bsky.network' timeout=5.0
+2025-04-23 21:46:00,273 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10885d5b0>
+2025-04-23 21:46:00,273 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-23 21:46:00,274 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:46:00,274 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-23 21:46:00,274 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:46:00,274 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-23 21:46:00,402 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2992'), (b'ratelimit-reset', b'1745459311'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Thu, 24 Apr 2025 01:46:00 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-23 21:46:00,403 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-23 21:46:00,403 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-23 21:46:00,404 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:46:00,404 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:46:00,404 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:46:00,404 - bluesky_labeler - INFO - Login successful as team10.bsky.social
+2025-04-23 21:46:00,404 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-23 21:46:00,404 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'
+2025-04-23 21:46:00,404 - bluesky_labeler - INFO - Testing authentication by fetching user profile
+2025-04-23 21:46:00,405 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-23 21:46:00,405 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-23 21:46:00,406 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-23 21:46:00,406 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-23 21:46:00,406 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-23 21:46:00,529 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'x-powered-by', b'Express'), (b'access-control-allow-origin', b'*'), (b'cache-control', b'private'), (b'vary', b'Authorization, Accept-Encoding'), (b'ratelimit-limit', b'3000'), (b'ratelimit-remaining', b'2991'), (b'ratelimit-reset', b'1745459311'), (b'ratelimit-policy', b'3000;w=300'), (b'content-length', b'490'), (b'content-type', b'application/json; charset=utf-8'), (b'atproto-repo-rev', b'3lkvudk4p7g22'), (b'atproto-content-labelers', b'did:plc:ar7c4by46qjdydhdevvrndac;redact'), (b'date', b'Thu, 24 Apr 2025 01:46:00 GMT'), (b'keep-alive', b'timeout=90'), (b'strict-transport-security', b'max-age=63072000')])
+2025-04-23 21:46:00,529 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-23 21:46:00,529 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-23 21:46:00,530 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-23 21:46:00,530 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-23 21:46:00,530 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-23 21:46:00,530 - bluesky_labeler - INFO - Authentication successful! Logged in as  (team10.bsky.social)
+2025-04-23 21:46:00,530 - bluesky_labeler - INFO - DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:46:00,530 - bluesky_labeler - INFO - Resolving DID for handle: team10.bsky.social
+2025-04-23 21:46:00,534 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bsky.social:443
+2025-04-23 21:46:00,659 - urllib3.connectionpool - DEBUG - https://bsky.social:443 "GET /xrpc/com.atproto.identity.resolveHandle?handle=team10.bsky.social HTTP/1.1" 200 42
+2025-04-23 21:46:00,660 - bluesky_labeler - INFO - Successfully resolved DID: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:46:00,660 - bluesky_labeler - INFO - Resolved DID for current user: did:plc:6rlqiizalnmvo6t6u5bexlz2
+2025-04-23 21:46:00,660 - bluesky_labeler - INFO - Creating labeler client
+2025-04-23 21:46:00,669 - bluesky_labeler - INFO - Labeler client created successfully
+2025-04-23 21:46:00,670 - bluesky_labeler - INFO - Inspecting client configuration
+2025-04-23 21:46:00,670 - bluesky_labeler - ERROR - Error inspecting client: 'Client' object has no attribute 'service'

@@ -1,0 +1,180 @@
+2025-04-27 14:25:04,574 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-27 14:25:08,200 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-27 14:27:58,429 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-27 14:27:58,709 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-27 14:27:58,797 - pylabel.automated_labeler - INFO - Initializing AutomatedLabeler
+2025-04-27 14:27:58,798 - pylabel.automated_labeler - INFO - Input directory: labeler-inputs
+2025-04-27 14:27:58,798 - pylabel.automated_labeler - INFO - Loaded 27 T&S words
+2025-04-27 14:27:58,799 - pylabel.automated_labeler - INFO - Loaded 10 T&S domains
+2025-04-27 14:27:58,804 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjgyau2v
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjgyau2v
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjgyau2v
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjkgdi2c
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjkgdi2c
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjkgdi2c
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjntvl2k
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjntvl2k
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjntvl2k
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjrnpy24
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjrnpy24
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,805 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjrnpy24
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjvmup2m
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjvmup2m
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjvmup2m
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpppa3a2m
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpppa3a2m
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpppa3a2m
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpptrrn2v
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpptrrn2v
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpptrrn2v
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfppxcgc2j
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfppxcgc2j
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfppxcgc2j
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq2wgl2r
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq2wgl2r
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,806 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq2wgl2r
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq6gti24
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq6gti24
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq6gti24
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53dyqe2e
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53dyqe2e
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53dyqe2e
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53hqqa24
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53hqqa24
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53hqqa24
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53lgse2r
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53lgse2r
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,807 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53lgse2r
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53pqpm2e
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53pqpm2e
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53pqpm2e
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53tmbs2n
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53tmbs2n
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53tmbs2n
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53xj5j2l
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53xj5j2l
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53xj5j2l
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg543gnj26
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg543gnj26
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg543gnj26
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg547cqp2c
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg547cqp2c
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,808 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg547cqp2c
+2025-04-27 14:27:58,809 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54dk6l2v
+2025-04-27 14:27:58,809 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54dk6l2v
+2025-04-27 14:27:58,809 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,809 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54dk6l2v
+2025-04-27 14:27:58,809 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54hep32k
+2025-04-27 14:27:58,809 - pylabel.automated_labeler - INFO - Retrieving post data for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54hep32k
+2025-04-27 14:27:58,809 - pylabel.automated_labeler - ERROR - Error retrieving post data: 'Client' object has no attribute 'bsky'
+2025-04-27 14:27:58,809 - pylabel.automated_labeler - WARNING - No post data found for URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54hep32k
+2025-04-27 14:29:09,352 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-27 14:29:09,675 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-27 14:29:09,834 - pylabel.automated_labeler - INFO - Initializing AutomatedLabeler
+2025-04-27 14:29:09,834 - pylabel.automated_labeler - INFO - Input directory: labeler-inputs
+2025-04-27 14:29:09,837 - pylabel.automated_labeler - INFO - Loaded 27 T&S words
+2025-04-27 14:29:09,838 - pylabel.automated_labeler - INFO - Loaded 10 T&S domains
+2025-04-27 14:29:09,845 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjgyau2v
+2025-04-27 14:29:09,845 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjgyau2v
+2025-04-27 14:29:09,845 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjkgdi2c
+2025-04-27 14:29:09,845 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjkgdi2c
+2025-04-27 14:29:09,845 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjntvl2k
+2025-04-27 14:29:09,845 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjntvl2k
+2025-04-27 14:29:09,845 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjrnpy24
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjrnpy24
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjvmup2m
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjvmup2m
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpppa3a2m
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpppa3a2m
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpptrrn2v
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpptrrn2v
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfppxcgc2j
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfppxcgc2j
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq2wgl2r
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq2wgl2r
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq6gti24
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq6gti24
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53dyqe2e
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53dyqe2e
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53hqqa24
+2025-04-27 14:29:09,846 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53hqqa24
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53lgse2r
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53lgse2r
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53pqpm2e
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53pqpm2e
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53tmbs2n
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53tmbs2n
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53xj5j2l
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53xj5j2l
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg543gnj26
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg543gnj26
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg547cqp2c
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg547cqp2c
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54dk6l2v
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54dk6l2v
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54hep32k
+2025-04-27 14:29:09,847 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54hep32k
+2025-04-27 14:30:11,148 - httpx - INFO - HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-04-27 14:30:11,467 - httpx - INFO - HTTP Request: GET https://hollowfoot.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=team10.bsky.social "HTTP/1.1 200 OK"
+2025-04-27 14:30:11,533 - pylabel.automated_labeler - INFO - Initializing AutomatedLabeler
+2025-04-27 14:30:11,533 - pylabel.automated_labeler - INFO - Input directory: labeler-inputs
+2025-04-27 14:30:11,534 - pylabel.automated_labeler - INFO - Loaded 27 T&S words
+2025-04-27 14:30:11,534 - pylabel.automated_labeler - INFO - Loaded 10 T&S domains
+2025-04-27 14:30:11,539 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjgyau2v
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjgyau2v
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjkgdi2c
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjkgdi2c
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjntvl2k
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjntvl2k
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjrnpy24
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjrnpy24
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjvmup2m
+2025-04-27 14:30:11,540 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfcjvmup2m
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpppa3a2m
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpppa3a2m
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpptrrn2v
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpptrrn2v
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfppxcgc2j
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfppxcgc2j
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq2wgl2r
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq2wgl2r
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq6gti24
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktfpq6gti24
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53dyqe2e
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53dyqe2e
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53hqqa24
+2025-04-27 14:30:11,541 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53hqqa24
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53lgse2r
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53lgse2r
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53pqpm2e
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53pqpm2e
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53tmbs2n
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53tmbs2n
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53xj5j2l
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg53xj5j2l
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg543gnj26
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg543gnj26
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg547cqp2c
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg547cqp2c
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54dk6l2v
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54dk6l2v
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Moderating post: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54hep32k
+2025-04-27 14:30:11,542 - pylabel.automated_labeler - INFO - Applying t-and-s label to test URL: https://bsky.app/profile/labeler-test.bsky.social/post/3lktg54hep32k
