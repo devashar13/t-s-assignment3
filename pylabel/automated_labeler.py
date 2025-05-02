@@ -1,16 +1,24 @@
 import os
 import csv
 import re
-from typing import List, Optional
+from typing import List, Optional, Dict, Set
 from urllib.parse import urlparse
+import requests
+from PIL import Image
+import imagehash
+import io
+import numpy as np
 
 from atproto import Client, models
 from atproto.exceptions import AtProtocolError, RequestException
 
 T_AND_S_LABEL = "t-and-s"
+DOG_LABEL = "dog"
+# Conservative threshold based on observed minimum distance
+THRESH = 18
 
 class AutomatedLabeler:
-    """Automated labeler implementation for T&S keyword/domain matching and news citation."""
+    """Automated labeler implementation for T&S keyword/domain matching, news citation, and image matching."""
 
     def __init__(self, client: Client, input_dir: str):
         """
@@ -18,11 +26,12 @@ class AutomatedLabeler:
 
         Args:
             client: An authenticated atproto.Client instance.
-            input_dir: The directory containing the T&S word/domain lists and news domains.
+            input_dir: The directory containing the T&S word/domain lists, news domains, and dog-list images.
         """
         self.client = client
         self._load_t_and_s_lists(input_dir)
         self._load_news_domains(input_dir)
+        self._load_dog_list_images(input_dir)
         self._did_cache = {}
 
     def _load_t_and_s_lists(self, d: str):
@@ -67,6 +76,83 @@ class AutomatedLabeler:
         except Exception as e:
             print(f"Error loading news domains from {news_path}: {e}")
 
+    def _load_dog_list_images(self, d: str):
+        """Loads and hashes dog-list images from the specified directory."""
+        self.dog_hashes = []
+        dog_images_dir = os.path.join(d, 'dog-list-images')
+        
+        try:
+            for filename in os.listdir(dog_images_dir):
+                if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+                    image_path = os.path.join(dog_images_dir, filename)
+                    try:
+                        with Image.open(image_path) as img:
+                            if img.mode != 'RGB':
+                                img = img.convert('RGB')
+                            phash = imagehash.phash(img)
+                            self.dog_hashes.append(phash)
+                    except Exception as e:
+                        print(f"Error processing dog-list image {filename}: {e}")
+        except Exception as e:
+            print(f"Error loading dog-list images: {e}")
+
+    def _get_post_images(self, post_view: models.AppBskyFeedDefs.PostView) -> List[str]:
+        """Extracts image URLs from a post."""
+        images = []
+        try:
+            if hasattr(post_view, 'embed') and post_view.embed:
+                if isinstance(post_view.embed, models.AppBskyEmbedImages.View):
+                    for image in post_view.embed.images:
+                        if hasattr(image, 'fullsize'):
+                            images.append(image.fullsize)
+                elif isinstance(post_view.embed, models.AppBskyEmbedRecord.View):
+                    if hasattr(post_view.embed.record, 'embeds'):
+                        for embed in post_view.embed.record.embeds:
+                            if isinstance(embed, models.AppBskyEmbedImages.View):
+                                for image in embed.images:
+                                    if hasattr(image, 'fullsize'):
+                                        images.append(image.fullsize)
+        except Exception as e:
+            print(f"Error extracting images from post: {e}")
+        return images
+
+    def _hash_image_from_url(self, url: str) -> Optional[imagehash.ImageHash]:
+        """Downloads and hashes an image from a URL."""
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+            img = Image.open(io.BytesIO(response.content))
+            if img.mode != 'RGB':
+                img = img.convert('RGB')
+            phash = imagehash.phash(img)
+            return phash
+        except Exception as e:
+            print(f"Error hashing image from {url}: {e}")
+            return None
+
+    def _check_image_match(self, img_hash: imagehash.ImageHash) -> bool:
+        """Checks if an image hash matches any dog-list image within the threshold."""
+        distances = []
+        
+        for dog_hash in self.dog_hashes:
+            distance = img_hash - dog_hash
+            distances.append(distance)
+        
+        distances = np.array(distances)
+        min_distance = np.min(distances)
+        mean_distance = np.mean(distances)
+        std_distance = np.std(distances)
+        sorted_distances = sorted(distances)
+        
+        if (min_distance == 0 or
+            min_distance <= 8 or
+            (min_distance <= 16 and 
+             (sorted_distances[1] - min_distance) >= 3 and
+             (mean_distance - min_distance) > 1.5 * std_distance)):
+            return True
+        
+        return False
+
     def _resolve_handle_to_did(self, handle: str) -> Optional[str]:
         """Resolves a handle to a DID using the client, with caching."""
         if handle in self._did_cache:
@@ -107,8 +193,9 @@ class AutomatedLabeler:
     def moderate_post(self, url: str) -> List[str]:
         """
         Applies moderation to the post specified by the given URL (Web or AT URI).
-        Labels it "t-and-s" if it contains matching words or domains, and applies
-        news publication labels for any linked articles.
+        Labels it "t-and-s" if it contains matching words or domains, applies
+        news publication labels for any linked articles, and applies "dog" label
+        if it contains matching images.
 
         Args:
             url: The Web URL (bsky.app) or AT URI of the post.
@@ -141,40 +228,48 @@ class AutomatedLabeler:
             post_view = response.thread.post
             record = getattr(post_view, 'record', None)
             text = getattr(record, 'text', '') if record else ''
-            if not text:
-                return []
 
-            text_lower = text.lower()
+            # Image matching
+            image_urls = self._get_post_images(post_view)
+            for img_url in image_urls:
+                img_hash = self._hash_image_from_url(img_url)
+                if img_hash and self._check_image_match(img_hash):
+                    labels.add(DOG_LABEL)
+                    break
 
-            # T&S keyword matching
-            for word in self.words:
-                try:
-                    if re.search(rf"\b{re.escape(word)}\b", text_lower):
-                        labels.add(T_AND_S_LABEL)
-                        break
-                except re.error as re_err:
-                    print(f"Debug: Regex error for word '{word}': {re_err}")
+            # Only proceed with text-based checks if no dog image was found
+            if DOG_LABEL not in labels and text:
+                text_lower = text.lower()
 
-            # T&S domain matching (if no keyword found)
-            if T_AND_S_LABEL not in labels:
-                for domain in self.domains:
-                    if domain in text_lower:
-                        labels.add(T_AND_S_LABEL)
-                        break
+                # T&S keyword matching
+                for word in self.words:
+                    try:
+                        if re.search(rf"\b{re.escape(word)}\b", text_lower):
+                            labels.add(T_AND_S_LABEL)
+                            break
+                    except re.error as re_err:
+                        print(f"Debug: Regex error for word '{word}': {re_err}")
 
-            # News citation labeling
-            urls_in_text = re.findall(r'https?://\S+', text)
-            for u in urls_in_text:
-                try:
-                    parsed = urlparse(u)
-                    host = parsed.netloc.lower().split(':')[0]
-                    if host.startswith('www.'):
-                        host = host[4:]
-                    for domain, label in self.news_domain_map.items():
-                        if host == domain or host.endswith(f'.{domain}'):
-                            labels.add(label)
-                except Exception:
-                    continue
+                # T&S domain matching (if no keyword found)
+                if T_AND_S_LABEL not in labels:
+                    for domain in self.domains:
+                        if domain in text_lower:
+                            labels.add(T_AND_S_LABEL)
+                            break
+
+                # News citation labeling
+                urls_in_text = re.findall(r'https?://\S+', text)
+                for u in urls_in_text:
+                    try:
+                        parsed = urlparse(u)
+                        host = parsed.netloc.lower().split(':')[0]
+                        if host.startswith('www.'):
+                            host = host[4:]
+                        for domain, label in self.news_domain_map.items():
+                            if host == domain or host.endswith(f'.{domain}'):
+                                labels.add(label)
+                    except Exception:
+                        continue
 
         except (AtProtocolError, RequestException) as api_error:
             print(f"API Error processing post AT URI {at_uri}: {type(api_error).__name__} - {api_error}")
