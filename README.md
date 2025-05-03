@@ -38,50 +38,76 @@ Overall ratio of correct label assignments 1.0
 
 ## Policy Proposal Labeler
 
-### Command Line Usage
-The policy proposal labeler is a command-line tool for analyzing Bluesky posts using machine learning. It supports training a model on a dataset and applying it to search results.
+A machine learning-based tool for detecting cryptocurrency-related scams on Bluesky social network. The tool uses a combination of text analysis, image processing, and pattern matching to identify potential scam posts.
 
-#### Usage:
-```bash
-python policy_proposal_labeler.py \
-  --username <bluesky_username> \
-  --password <bluesky_password> \
-  --openai-key <openai_api_key> \
-  --train <training_dataset.csv> \
-  --model <output_model.joblib> \
-  --query "query1" "query2" "query3" \
-  --limit <number_of_posts> \
-  --output-csv <results_file.csv>
+### Features
+- **Text Analysis**: Uses TF-IDF and pattern matching to detect scam-related content
+- **Image Processing**: Extracts text from images using OpenAI's Vision API
+- **Real-time Processing**: Analyzes posts as they are fetched from Bluesky
+- **Performance Monitoring**: Tracks processing time, memory usage, and network data
+- **Detailed Reporting**: Provides comprehensive metrics and classification results
+
+### Setup
+1. Create a `.env` file in the project root with your credentials:
+```env
+BSKY_USER=your_username
+BSKY_PASS=your_password
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-#### Parameters:
-- `--username`: Bluesky username (e.g., team10.bsky.social)
-- `--password`: Bluesky password
-- `--openai-key`: OpenAI API key for text analysis
-- `--train`: Path to training dataset in CSV format
-- `--model`: Path to save/load the trained model
-- `--query`: Space-separated list of search queries
-- `--limit`: Maximum posts to analyze per query
-- `--output-csv`: Path to save analysis results
-
-#### Example:
+2. Install required dependencies:
 ```bash
-python policy_proposal_labeler.py \
-  --username team10.bsky.social \
-  --password trustandsafety \
-  --openai-key <your-api-key> \
-  --train crypto_posts_dataset.csv \
-  --model crypto_model.joblib \
-  --query "crypto giveaway" "bitcoin giveaway" "free crypto" "ethereum airdrop" "crypto winners" \
-  --limit 20 \
-  --output-csv crypto_scam_results.csv
+pip install -r requirements.txt
 ```
 
-#### Workflow:
-1. Model Training: Uses the provided dataset to train a classification model
-2. Post Collection: Searches Bluesky for posts matching the specified queries
-3. Analysis: Applies the trained model to analyze collected posts
-4. Output: Saves results to CSV with post URLs and classification scores
+### Usage
+```bash
+python policy_proposal_labeler.py
+```
+
+### Configuration
+The script can be configured by modifying these variables in `policy_proposal_labeler.py`:
+```python
+# Search Configuration
+QUERY_LIST = [
+    "crypto giveaway", "bitcoin giveaway", "free crypto",
+    "ethereum airdrop", "crypto winners"
+]
+LIMIT = 20  # posts per query
+
+# Model Configuration
+DO_TRAIN = True  # Set to False to use existing model
+DO_SCAN = True   # Set to False to skip scanning
+```
+
+### Output Files
+1. **Model File**: `crypto_model.joblib` - The trained model
+2. **Scan Results**: `scan_results.csv` - Contains analyzed posts with classification results
+3. **Performance Metrics**: `performance_metrics.json` - Contains timing and resource usage data
+4. **Evaluation Results**: `evaluation.json` - Contains model evaluation metrics
+
+### Real-time Processing
+The script provides real-time updates during processing:
+```
+Processing post 1/15
+Author: example.bsky.social
+Text length: 150 chars
+Found 2 images
+Extracting text from images...
+Processing image 1/2
+Image text extracted successfully
+Classifying post...
+Classification: SCAM (confidence: 0.85)
+Post processed in 1.23s
+Current memory usage: 120.45 MB
+```
+
+### Model Details
+The classification model uses:
+- TF-IDF vectorization for text features
+- Pattern matching for known scam indicators
+- Logistic Regression with class weights
+- Cross-validation for parameter tuning
 
 
 
